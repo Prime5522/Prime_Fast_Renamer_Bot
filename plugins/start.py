@@ -18,7 +18,7 @@ import os
 CHANNEL = os.environ.get('CHANNEL', "")
 STRING = os.environ.get("STRING", "")
 ADMIN = int(os.environ.get("ADMIN", 1484670284))
-bot_username = os.environ.get("BOT_USERNAME","GangsterBaby_renamer_BOT")
+bot_username = os.environ.get("BOT_USERNAME","")
 log_channel = int(os.environ.get("LOG_CHANNEL", ""))
 token = os.environ.get('TOKEN', '')
 botid = token.split(':')[0]
@@ -50,11 +50,11 @@ async def start(client, message):
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/LazyDeveloper")],
-                                      [InlineKeyboardButton("🦋 Subscribe us 🦋", url="https://youtube.com/@LazyDeveloperr")],
-                                      [InlineKeyboardButton("Support Group", url='https://t.me/LazyPrincessSupport'),
-                                      InlineKeyboardButton("Movie Channel", url='https://t.me/real_MoviesAdda2')],
-                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://p.paytm.me/xCTH/vo37hii9')]
+                                      [[InlineKeyboardButton("🔺 Update Channel 🔺", url="https://t.me/PRIME_BOTZ")],
+                                      [InlineKeyboardButton("🦋 Admin Support 🦋", url="https://t.me/Prime_Bots_Support_RoBot")],
+                                      [InlineKeyboardButton("🔎Movie Request Group🔍", url='https://t.me/Prime_Movies4U/143'),
+                                      InlineKeyboardButton("✨ Movie Channel ✨", url='https://t.me/Prime_Movies4U')],
+                                      [InlineKeyboardButton("☕ Buy Me A Coffee ☕", url='https://envs.sh/0lv.jpg')]
                                       ]))
         return
     if id:
