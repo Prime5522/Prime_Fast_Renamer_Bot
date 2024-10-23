@@ -44,7 +44,7 @@ async def ceasepremium(bot, message):
 
 @Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["resetpower"]))
 async def resetpower(bot, message):
-	    await message.reply_text(text=f"Do you really want to reset daily limit to default data limit 1.2GB ?",quote=True,reply_markup=InlineKeyboardMarkup([
+	    await message.reply_text(text=f"Do you really want to reset daily limit to default data limit 3GB ?",quote=True,reply_markup=InlineKeyboardMarkup([
 		           [InlineKeyboardButton("• YES ! Set as Default •",callback_data = "dft")],
 				   [InlineKeyboardButton("❌ Cancel ❌",callback_data = "cancel")]
 				   ]))
@@ -123,8 +123,8 @@ async def cp3(bot,update):
 async def dft(bot,update):
 	id = update.message.reply_to_message.text.split("/resetpower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 1288490188
-	uploadlimit(int(user_id), 1288490188)
+	inlimit = 3221225472
+	uploadlimit(int(user_id), 3221225472)
 	usertype(int(user_id),"**Free**")
 	addpre(int(user_id))
 	await update.message.edit("Daily Data limit has been reset successsfully.\nThis account has default 1.2 GB renaming capacity ")
